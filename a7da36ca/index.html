@@ -4,9 +4,9 @@
 
 <head><meta name="generator" content="Hexo 3.9.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="Vue + SpringCloud之后端实战经验分享, 猿人">
-    <meta name="description" content="Vue + SpringCloud之后端实战经验分享
-1.前后端分离去年项目组的项目是SpringMVC+Dwz实现的，由于业务增加，这样的一个springMVC项目已经很臃肿，一处出现问题，就导致服务崩溃，太不灵活。今年年初，为了适应公司">
+    <meta name="keywords" content="Github + hexo matery 主题搭建免费博客, 猿人">
+    <meta name="description" content="Github + hexo matery 主题搭建免费博客
+为什么要搭建博客？别人吐槽我现有的博客就是远古的博客，页面太low！另外一个原因是博客的内容是存储在数据库中，前段时间我的数据库被黑了，博客的内容全没了！基于这两个原因我在思考重新">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -14,7 +14,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>Vue + SpringCloud之后端实战经验分享 | 不安分的猿人</title>
+    <title>Github + hexo matery 主题搭建免费博客 | 不安分的猿人</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -285,13 +285,13 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/markdownimages/vue.png')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/markdownimages/hexo.png')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
                     <div class="description center-align post-title">
-                        Vue + SpringCloud之后端实战经验分享
+                        Github + hexo matery 主题搭建免费博客
                     </div>
                 </div>
             </div>
@@ -403,12 +403,12 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/SpringCloud/">
-                                <span class="chip bg-color">SpringCloud</span>
+                            <a href="/tags/node/">
+                                <span class="chip bg-color">node</span>
                             </a>
                         
-                            <a href="/tags/Vue/">
-                                <span class="chip bg-color">Vue</span>
+                            <a href="/tags/博客/">
+                                <span class="chip bg-color">博客</span>
                             </a>
                         
                     </div>
@@ -419,8 +419,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/Vue/" class="post-category">
-                                Vue
+                            <a href="/categories/博客/" class="post-category">
+                                博客
                             </a>
                         
                     </div>
@@ -438,14 +438,14 @@
                     
                     <div class="info-break-policy">
                         <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                        1.6k
+                        1k
                     </div>
                     
 
                     
                     <div class="info-break-policy">
                         <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                        5 分
+                        4 分
                     </div>
                     
                 
@@ -461,71 +461,79 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>Vue + SpringCloud之后端实战经验分享</p>
-<h2 id="1-前后端分离"><a href="#1-前后端分离" class="headerlink" title="1.前后端分离"></a>1.前后端分离</h2><p>去年项目组的项目是SpringMVC+Dwz实现的，由于业务增加，这样的一个springMVC项目已经很臃肿，一处出现问题，就导致服务崩溃，太不灵活。今年年初，为了适应公司业务的发展，公司高层决定项目重构，采用前后端分离。今天先分享后端的开发。</p>
-<p>前后端的好处显而易见：</p>
-<p>1.前端JS可以做很大部分的数据处理工作，对服务器的压力减小到最小。</p>
-<p>2.后台错误不会直接反映到前台，错误接秒较为友好。</p>
-<p>3.前后台各尽其职可以最大程度的减少开发难度。 </p>
-<p><img src="https://ae01.alicdn.com/kf/HTB1bAxsa1T2gK0jSZFvq6xnFXXaJ.jpg" alt></p>
-<h2 id="2-技术栈"><a href="#2-技术栈" class="headerlink" title="2.技术栈"></a>2.技术栈</h2><ol>
-<li>SpringBoot :是由 Pivotal 团队提供的全新框架，其设计目的是用来简化新 Spring 应用的初始搭建以及开发过程。该框架使用了特定的方式来进行配置，从而使开发人员不再需要定义样板化的配置。</li>
-<li>SpringCloud：是一系列框架的有序集合。它利用Spring Boot的开发便利性巧妙地简化了分布式系统基础设施的开发，如服务发现注册、配置中心、消息总线、负载均衡、断路器、数据监控等，都可以用Spring Boot的开发风格做到一键启动和部署。</li>
-<li>Docker：是一个开源的应用容器引擎，让开发者可以打包他们的应用以及依赖包到一个可移植的容器中,然后发布到任何流行的Linux机器上,也可以实现虚拟化,容器是完全使用沙箱机制,相互之间不会有任何接口。</li>
-<li>Jenkins：一种比较流行的持续集成工具。持续集成是使多种软件的功能集成到一个软件里，或是把软件的各部分组合在一起。 </li>
-<li>RabbitMQ：是一个开源的消息代理和队列服务器，用来通过普通协议在完全不同的应用之间共享数据，或者简单的将作业排队以便让分布式服务器进行处理。</li>
-<li>Redis是完全开源免费的，是一个开源的高性能的key-value数据库。</li>
+                <p>Github + hexo matery 主题搭建免费博客</p>
+<h2 id="为什么要搭建博客？"><a href="#为什么要搭建博客？" class="headerlink" title="为什么要搭建博客？"></a>为什么要搭建博客？</h2><p>别人吐槽我现有的博客就是远古的博客，页面太low！另外一个原因是博客的内容是存储在数据库中，前段时间我的数据库被黑了，博客的内容全没了！基于这两个原因我在思考重新搭建我的博客。看到身边人的博客都那么漂亮，我也最终选择了hexo。hexo 是一款基于 Node.js 的静态博客框架。目前在GitHub上已有 28144 star 和 3721 fork。 </p>
+<p>这是我上半年通过源码搭建的博客，地址是：<a href="http://www.mhtclub.com/" target="_blank" rel="noopener">http://www.mhtclub.com/</a> 。如下图：</p>
+<p><img src="https://pic2.zhimg.com/v2-b8bbdb4341fbd7c92ff540e26b8f31ad_b.png" alt="1569652156918"></p>
+<p>这是我新搭建的博客，地址是：<a href="https://www.restlessman.cn/">https://www.restlessman.cn/</a> ，效果如下图：</p>
+<p><img src="https://pic3.zhimg.com/v2-169fda10707385ae1741ac410682ea66_b.png" alt="1569655646774"></p>
+<h3 id="我觉得-hexo-框架的优点有："><a href="#我觉得-hexo-框架的优点有：" class="headerlink" title="我觉得 hexo 框架的优点有："></a>我觉得 hexo 框架的优点有：</h3><p>1.不需要数据库，直接解析 markdown 文档内容，所以只关注写文章就好。</p>
+<p>2.超级多的主题可自由选择。</p>
+<p>3.超级多的插件，无所不能。留言板，聊天，阅读量统计，url 短连接转化等等。</p>
+<h2 id="博客搭建步骤"><a href="#博客搭建步骤" class="headerlink" title="博客搭建步骤"></a>博客搭建步骤</h2><h3 id="1-基础环境配置"><a href="#1-基础环境配置" class="headerlink" title="1.基础环境配置"></a>1.基础环境配置</h3><p>安装 Git，Git是开源的分布式版本控制系统，用于敏捷高效地处理项目。     </p>
+<p>1.1 本地生成 ssh 密钥文件 </p>
+<pre><code>ssh-keygen -t rsa -C &quot;你的GitHub注册邮箱&quot;</code></pre><p>在 Github 个人设置中心，新建一个 SSH key。“SSH and GPG keys ” -&gt; “New SSH key “ </p>
+<p><img src="https://pic3.zhimg.com/v2-d6206b2fc6fcdf043b60653d441aafaa_b.png" alt="1569652761082"></p>
+<p>最后在 Git Bash 中检测 GitHub 公钥设置是否成功，输入 ssh <a href="mailto:git@github.com" target="_blank" rel="noopener">git@github.com</a> </p>
+<p><img src="https://pic2.zhimg.com/v2-e26cf1c24a90ef02b1e79d5182b3fea1_b.png" alt="1569652966892"></p>
+<p>如上图所示，就表示配置成功。</p>
+<p>1.2 安装Node.js</p>
+<p>下载Node.js 安装程序，官网地址：<a href="https://nodejs.org/en/download/" target="_blank" rel="noopener">https://nodejs.org/en/download/</a> </p>
+<p><img src="https://pic3.zhimg.com/v2-9685eecdf9b3efc0d15fc0c4531b99ce_b.png" alt="1569653136187"></p>
+<p>1.3 安装 hexo</p>
+<pre><code>npm install -g hexo-cli   #使用npm命令安装Hexo
+hexo init blog    #初始化博客
+hexo new test_my_site   #创建博客本地项目test_my_site
+hexo g   #hexo博客打包
+hexo s   #hexo博客启动</code></pre><p>然后在浏览器访问：localhost:4000 ，就可以看到刚刚创建的博客了。</p>
+<h3 id="2-选择主题"><a href="#2-选择主题" class="headerlink" title="2.选择主题"></a>2.选择主题</h3><p>hexo 的主题超级丰富，很多人都使用的 next 网上也有很多教程。</p>
+<p>hexo themes主题官网：  <a href="https://hexo.io/themes/index.html" target="_blank" rel="noopener">https://hexo.io/themes/index.html</a> </p>
+<p>上周无意间发现一位兄弟的博客是通过 matery 主题搭建的，让我眼前一亮，我的主题就是它了。</p>
+<p><img src="https://pic2.zhimg.com/v2-8f4ece609db7f8bb73972ec3a4934e99_b.png" alt="1569653789764"></p>
+<h3 id="3-markdown-文档内容修改"><a href="#3-markdown-文档内容修改" class="headerlink" title="3.markdown 文档内容修改"></a>3.markdown 文档内容修改</h3><p>修改本地 markdown 文档，使用 front-matter 语法，修改文章头格式：</p>
+<pre class=" language-json"><code class="language-json">---
+title<span class="token operator">:</span> Vue + SpringCloud之后端实战经验分享
+date<span class="token operator">:</span> <span class="token number">2018</span>-<span class="token number">09</span>-<span class="token number">07</span> <span class="token number">09</span><span class="token operator">:</span><span class="token number">25</span><span class="token operator">:</span><span class="token number">00</span>
+author<span class="token operator">:</span> 不安分的猿人
+img<span class="token operator">:</span> /medias/markdownimages/vue.png
+top<span class="token operator">:</span> <span class="token boolean">true</span>
+cover<span class="token operator">:</span> <span class="token boolean">true</span>
+coverImg<span class="token operator">:</span> /medias/markdownimages/vue.png
+summary<span class="token operator">:</span> 概要
+categories<span class="token operator">:</span> Vue
+tags<span class="token operator">:</span>
+  - SpringCloud
+  - Vue
+---</code></pre>
+<h3 id="3-安装插件"><a href="#3-安装插件" class="headerlink" title="3.安装插件"></a>3.安装插件</h3><p>3.1 推送网站内容到 Github 安装插件 hexo-deployer</p>
+<pre class=" language-bash"><code class="language-bash"><span class="token function">npm</span> <span class="token function">install</span> hexo-deployer-git --save   <span class="token comment" spellcheck="true">#本地安装hexo-deployer插件</span>
+hexo clean  <span class="token comment" spellcheck="true">#清除本地db</span>
+hexo g -d    <span class="token comment" spellcheck="true">#推送代码到远端</span></code></pre>
+<p>3.2 安装短地址链接插件</p>
+<pre class=" language-bash"><code class="language-bash"><span class="token function">npm</span> <span class="token function">install</span> hexo-abbrlink --save  <span class="token comment" spellcheck="true">#本地安装hexo-abbrlink插件</span></code></pre>
+<p>项目环境下 _config.yml 文件添加如下内容：</p>
+<pre><code>permalink: :abbrlink/
+abbrlink:
+  alg: crc32  # 算法：crc16(default) and crc32
+  rep: hex    # 进制：dec(default) and hex
+permalink_defaults:</code></pre><h3 id="4-SEO优化"><a href="#4-SEO优化" class="headerlink" title="4.SEO优化"></a>4.SEO优化</h3><p>4.1 百度收录你的网站</p>
+<p><img src="https://pic2.zhimg.com/v2-5e5f32ce6d17ca1d668e3da84ade5231_b.png" alt="1569656041122"></p>
+<p>4.2 生成网站地图，向百度提交链接</p>
+<p>生成网站地图，需安装插件sitemap插件</p>
+<pre class=" language-bash"><code class="language-bash"><span class="token function">npm</span> <span class="token function">install</span> hexo-generator-sitemap --save
+<span class="token function">npm</span> <span class="token function">install</span> hexo-generator-baidu-sitemap --save</code></pre>
+<p>执行 hexo g  在项目根目录会生成，sitemap.xml<code>文件和</code>baidusitemap.xml文件。通过<a href="http://www.webname.com/sitemap.xml" target="_blank" rel="noopener">www.webname.com/sitemap.xml</a> 检查文件是否生成。</p>
+<p>向百度提交提交链接，操作如下：</p>
+<p><img src="https://pic3.zhimg.com/v2-b232b183fb94d3b146e849242c9ecab2_b.png" alt="img"> </p>
+<p>4.3 让 Google 收录你的站点</p>
+<p>google 站点平台：<a href="https://link.zhihu.com/?target=https%3A//www.google.com/webmasters/" target="_blank" rel="noopener">https://www.google.com/webmasters/</a> </p>
+<p><img src="https://pic2.zhimg.com/v2-40ab2863b2abee4cb3695ae0e665906d_b.png" alt="1569657041191"></p>
+<h2 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h2><p>hexo 可以让你快速上手搭建博客，要想设计自己独有的风格博客，那就需要花费点时间。本编讲解的内容都很基础，有兴趣的伙伴可以动动手，半个小时就可以拥有你自己的博客网站。当然在博客搭建上有什么问题可以告诉我，我们一起进步，互相学习！</p>
+<h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><ol>
+<li>matery主题创作者的博客     <a href="https://blinkfox.github.io/" target="_blank" rel="noopener">https://blinkfox.github.io/</a> </li>
+<li>Hexo SEO优化教程             <a href="https://zhuanlan.zhihu.com/p/80140893" target="_blank" rel="noopener">https://zhuanlan.zhihu.com/p/80140893</a> </li>
+<li>hexo-abbrlink插件安装        <a href="https://ergou.fun/posts/733.html" target="_blank" rel="noopener">https://ergou.fun/posts/733.html</a> </li>
 </ol>
-<h2 id="3-后端项目总结"><a href="#3-后端项目总结" class="headerlink" title="3.后端项目总结"></a>3.后端项目总结</h2><ol>
-<li>项目微服务四个基础服务,其他就是业务服务。</li>
-</ol>
-<p>​               Eurake： 主要职责服务的注册和发现。</p>
-<p>​               Admin： 负责用户认证，生成用户token。</p>
-<p>​               System： 系统基础数据服务。</p>
-<p>​               Zuul： 网管服务。</p>
-<p>​    2. 独立开发的springBoot项目</p>
-<p>​         完成业务功能的同时，项目也内置swagger（一款API文档的框架 ），方便前后台接口调试。</p>
-<ol start="3">
-<li><p>服务间调用</p>
-<p>我们采用的Feign进行服务间调用，它只需要创建一个接口，并且使用注解的方式去配置，即可完成对服务提供方的接口绑定，大大简化了代码的开发量 。其他方式也有RestTemplate。</p>
-</li>
-<li><p>持续集成工具Jenkins</p>
-<p>项目组成员提交代码到GitLab，Jenkins检测有代码更新，会自动打包部署。项目实现部署自动化，减少人工成本。</p>
-</li>
-</ol>
-<ol start="5">
-<li><p>分布式事务</p>
-<p>LCN分布式事务框架的核心功能是对本地事务的协调控制，框架本身并不创建事务，只是对本地事务做协调控制。</p>
-</li>
-<li><p>SpringBoot项目架构优化</p>
-<p>由于有些服务需要对外提供多个调用接口，我们小组组长对微服务做了一些改进。将一个springBoot项目拆分为三个模块：entity,server,client。entity是实体，server是业务出来逻辑，client是FeignClient。其他服务需要调用本服务的接口，只需要在pom中引用entity,client。就不需要在自己的微服务中定义实体和FeignClient，使服务间调用解耦。</p>
-</li>
-<li><p>使用RabbitMQ记录日志</p>
-<p>RabbitMQ是实现 AMQP（高级消息队列协议）的消息中间件的一种，项目中主要使用使用RabbitMQ记录日志。</p>
-</li>
-<li><p>使用Java8新语法</p>
-<p>在springBoot项目开发中使用了一些Java8的新语法，lambda表达式，Steam,Optional,方法引用,日期的处理等。</p>
-</li>
-<li><p>遇到的坑</p>
-</li>
-</ol>
-<p>​       1.服务间调用无法调用</p>
-<p>​        当我们需要调试某个微服务的时候，将我们这个微服务注册到开发测试环境的eurake服务上，但是经常是自动访问不到我们注册的服务。解决方法在FeignClient注解添加url属性，指定服务地址。例如：@FeignClient(name = “test-client”, url = “<a href="https://api.github.com&quot;" target="_blank" rel="noopener">https://api.github.com&quot;</a>)</p>
-<p>​       2.FeiginClient实现文件上传功能</p>
-<p>​        服务提供方的请求需添加consumes 参数， @PostMapping(value = “/uploadFile”, consumes = MediaType.MULTIPART_FORM_DATA_VALUE)，服务的消费方在FeignClient需要添加SpringFormEncoder编码器。添加如下代码：</p>
-<pre><code>@Configuration
-    class MultipartSupportConfig {
-        @Bean
-        public Encoder feignFormEncoder() {
-            return new SpringFormEncoder();
-        }
-    }</code></pre><p>​         3.指定数据库方言</p>
-<p>​          如果不指定数据库方言 ，使用Mybitas Plus自动生成分页查询语句可能回出现问题。</p>
-<p>​        4.日期类型时间相差8小时</p>
-<p>​           原因是前台传递的是UTC 时间，UTC + 时区差 ＝ 本地时间。所有后台有两种解决方式，使用Java8的LocalDateTime类型，或者使用Date类型，在属性上添加注解@JsonFormat(pattern=”yyyy-MM-dd”,timezone=”GMT+8”)。</p>
-<h2 id="5-结语"><a href="#5-结语" class="headerlink" title="5.结语"></a>5.结语</h2><p>最开始项目要重构采用新的架构，前端使用时下流行的Vue,后端使用便捷的SpringBoot，我是很兴奋的。我是做Java开发，后端对于我来说是没有什么问题。但是前端就感觉有点吃力了，因为当时决定前后端分离，我们项目还没有一个前端，感觉很虚。</p>
-<p>公司的大力支持，在项目进入开发阶段的前两周，有了三人的前端开发团队，然后我们就进入了疯狂的撸代码阶段。项目组都是年轻人，我们为了一个共同目标，共同奋斗，超越自我。从一开始的不自信，慢慢走向自信。虽然一直加班，但也一直在成长，年轻就该吃点苦头！</p>
-<p>一直很忙碌，没时间总结，今天整理一下，文中主要是我个人的一些经历和思考。前后端分离项目中遇到了很多坑，你在项目开发中遇到过那些坑，我们可以一起讨论。</p>
 
             </div>
             <hr/>
@@ -687,7 +695,7 @@
             </div>
             <br/>
             <a  href="/a7da36ca/">
-                    《Vue + SpringCloud之后端实战经验分享》
+                    《Github + hexo matery 主题搭建免费博客》
             </a> 由
             <a href="https://www.restlessman.cn">
                 不安分的猿人
@@ -990,18 +998,18 @@
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/f845da8a/">
+                <a href="/bfcb9f10/">
                     <div class="card-image">
                         
-                        <img src="/medias/markdownimages/lajifenlei.jpg" class="responsive-img" alt="垃圾分类元年">
+                        <img src="/medias/markdownimages/dingding.png" class="responsive-img" alt="钉钉自动打卡，虚假截图助手两款实用的开源项目分享给大家">
                         
-                        <span class="card-title">垃圾分类元年</span>
+                        <span class="card-title">钉钉自动打卡，虚假截图助手两款实用的开源项目分享给大家</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            2019 年 7 月 1 日是值得纪念的一天，因为从这天开始，《上海市生活垃圾管理条例》正式施行。
+                            今天分享的开源项目是为了让大家的开阔视野，学习他们的思路，不是让大家使坏的。透过现象看本质，我们日常生活会发现很多问题，嗅觉敏锐的人会发现这样那样的痛点，通过自己的所学来解决痛点。钉钉自动打卡，虚假截图助手都是这类解决痛点的好项目，我们可以学习一下！
                         
                     </div>
                     <div class="publish-info">
@@ -1012,8 +1020,8 @@
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/python/" class="post-category">
-                                    python
+                            <a href="/categories/github/" class="post-category">
+                                    github
                                 </a>
                             
                             
@@ -1027,8 +1035,8 @@
                         <span class="chip bg-color">技巧</span>
                     </a>
                     
-                    <a href="/tags/python/">
-                        <span class="chip bg-color">python</span>
+                    <a href="/tags/github/">
+                        <span class="chip bg-color">github</span>
                     </a>
                     
                 </div>
@@ -1042,30 +1050,30 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/caeb682/">
+                <a href="/e94264c/">
                     <div class="card-image">
                         
-                        <img src="/medias/markdownimages/github.png" class="responsive-img" alt="如何快速掌握 Github 的开源项目？">
+                        <img src="/medias/markdownimages/tuchuang.jpg" class="responsive-img" alt="超好用：免费的图床">
                         
-                        <span class="card-title">如何快速掌握 Github 的开源项目？</span>
+                        <span class="card-title">超好用：免费的图床</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            Github 是全球最大的代码托管网站，也是最大的程序员交友网站。我注册 Github 的账号特别早，一直对这个“英文网站”不感冒！直到2018年我才发现 Github 的强大。认识朋友原来都是大佬，Github 上的的项目都有自5000+点赞量，我真佩服他们！
+                            经常写文章的小伙伴可能会头疼，图片需要一张一张的上传，费劲也耗时，今天就推荐几款超简单的图床工具。
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2018-09-07
+                                <i class="far fa-clock fa-fw icon-date"></i>2018-06-07
                             </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/Vue/" class="post-category">
-                                    Vue
+                            <a href="/categories/工具/" class="post-category">
+                                    工具
                                 </a>
                             
                             
@@ -1075,8 +1083,12 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/Github/">
-                        <span class="chip bg-color">Github</span>
+                    <a href="/tags/技巧/">
+                        <span class="chip bg-color">技巧</span>
+                    </a>
+                    
+                    <a href="/tags/图床/">
+                        <span class="chip bg-color">图床</span>
                     </a>
                     
                 </div>
@@ -1202,7 +1214,7 @@
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">26.9k</span>&nbsp;字
+                class="white-color">27.9k</span>&nbsp;字
             
             
             
